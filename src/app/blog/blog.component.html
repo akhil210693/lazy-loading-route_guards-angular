@@ -1,0 +1,25 @@
+<h1 class="heading">Blog</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2 text-center">
+            <nav class="navbar bg nav-dark" style>
+
+                <!-- Links -->
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="latest" routerLinkActive="active">Latest</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="old" routerLinkActive="active" href="#">Old</a>
+                  </li>
+                  
+                </ul>
+              
+              </nav>
+        </div>
+    <div class="col-sm-10">
+<router-outlet></router-outlet>
+</div>
+</div>
+    
+</div>

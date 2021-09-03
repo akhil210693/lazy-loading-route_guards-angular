@@ -1,0 +1,57 @@
+<h1 class="heading">Contact</h1>
+	<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+		<form #register="ngForm" (ngSubmit)="onSubmit(register)">
+		<div class="row">
+		<div class="col-sm-6">
+		<div class="form-group">
+  
+  <input type="text" class="form-control" [(ngModel)]="user.fname" id="fname"  placeholder="First Name" ngModel name="fname" #fname="ngModel" pattern="[a-zA-Z]{2,}" required>
+  
+	<small class="text-danger" *ngIf="(fname.invalid && fname.touched)">Name is required only letters </small>
+		
+		</div>
+		</div>
+			<div class="col-sm-6">
+		<div class="form-group">
+  
+  <input type="text" class="form-control" [(ngModel)]="user.lname" id="lname" placeholder="Last Name"  ngModel name="lname" #lname="ngModel" pattern="[a-zA-Z]{2,}" required>
+  <small class="text-danger" *ngIf="(lname.invalid && lname.touched)">Name is required only letters </small>
+</div>	
+		</div>
+		</div>
+		<div class="row">
+		<div class="col-sm-6">
+		<div class="form-group">
+  
+  <input type="email" class="form-control" [(ngModel)]="user.email" id="email" placeholder="Email" name="email" ngModel #email="ngModel" email required>
+  <small class="text-danger" *ngIf="(email.invalid && email.touched)">Email is required</small>
+</div>	
+		</div>
+			<div class="col-sm-6">
+		<div class="form-group">
+  
+  <input type="text" class="form-control" [(ngModel)]="user.phone" id="phone" placeholder="Phone Number" name="phone" ngModel #phone="ngModel" pattern="(6|7|8|9)\d{9}" required>
+  <small class="text-danger" *ngIf="(phone.invalid && phone.touched)">Phone Number is required</small>  
+</div>	
+		</div>
+		</div>
+		<div class="form-group">
+ 
+  <textarea class="form-control" rows="4" id="comment" [(ngModel)]="user.address" name="address" ngModel #address="ngModel" required></textarea>
+  <small class="text-danger" *ngIf="(address.invalid && address.touched)">address is required</small>  
+</div>
+		<div class="text-center">
+		<input type="submit" [disabled]="register.form.invalid" class="btn btn-primary" value="submit">
+		</div>
+	</form>
+		</div>
+		<div class="col-sm-6">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d486416.7469711292!2d82.98238928687721!3d17.738473374298092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39431389e6973f%3A0x92d9c20395498468!2sVisakhapatnam%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1620809264125!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		
+		</div>
+		
+		</div>
+	
+	</div>

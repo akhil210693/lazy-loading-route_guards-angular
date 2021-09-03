@@ -1,0 +1,5 @@
+/* You can add global styles to this file, and also import other style files */
+.heading {
+	background-color:black;color:white;margin:10% 0 2% 0;
+	font-family: roboto-slab;font-weight:900;text-align:center;
+}

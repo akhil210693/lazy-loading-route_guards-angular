@@ -1,0 +1,82 @@
+<div  id="header">
+	<div class="container">
+	<nav class="navbar navbar-expand-lg ">
+  <a class="navbar-brand" href="#"><img [src]="img" height="70px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars" style="color:white"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="#" routerLink="home" routerLinkActive="active" >Home </a>
+      </li>
+	<li class="nav-item ">
+        <a class="nav-link" href="#" routerLink="about" routerLinkActive="active" >{{name}} </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="gallery" routerLinkActive="active" >Gallery</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="blog" routerLinkActive="active" >Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="contact" routerLinkActive="active" >Contact</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+	
+	</div>
+	</div>
+<router-outlet></router-outlet>
+<div class="footer mt-5">
+	<div class="container">
+		<div class="row">
+		<div class="col-sm-4">
+		<div class="pt-3 pb-3">
+			<h1>Quick Links</h1>
+			<p><a href="index.html">Home</a></p>
+			<p><a href="#">About</a></p>
+			<p><a href="#">Gallery</a></p>
+			<p><a href="#">Blog</a></p>
+			<p><a href="#">Contact</a></p>
+			</div>
+		
+		
+		</div>
+		<div class="col-sm-4">
+		<div class="pt-3 pb-3">
+			<h1>Contact Info</h1>
+			<p>Address:</p>
+			<p>Vizag</p>
+			<p>Phonenumber:</p>
+			<p>9876543210</p>
+			<p>EMail:</p>
+			<p>hasdhs@gmial.com</p>
+			</div>
+		
+		
+		</div>
+		<div class="col-sm-4">
+		<div class="pt-3 pb-3">
+			<h1>Connect US</h1>
+			<i class="fab fa-facebook ficon"></i>
+			<i class="fab fa-facebook ficon"></i>
+			<i class="fab fa-facebook ficon"></i>
+			<i class="fab fa-facebook ficon"></i>
+			<i class="fab fa-facebook ficon"></i>
+			<i class="fab fa-facebook ficon"></i>
+			</div>
+		
+		
+		</div>
+		
+		</div>
+		<hr style="color:white;background-color:white;">
+		<div class="text-center">
+		&copy copyrights 2021 reserved
+		</div>
+	</div>
+	</div>

@@ -1,0 +1,15 @@
+#header{width:100%;background-color:rgba(0,0,0,1);position:fixed;z-index:999;top:0}
+	.nav-link{text-decoration:none;color:white;margin:0 65px;font-family: roboto-slab;font-weight:900;}
+	.nav-link:hover{color:red}
+	.dropdown-menu{background-color:black}
+	.dropdown-item{text-decoration:none;color:white;font-family: roboto-slab;font-weight:900;}
+	.dropdown-item:hover{color:red;}
+.active{color:red!important}
+
+.footer {
+	background-color:black;color:white;
+}
+
+.ficon {
+	font-size:24px;padding-left:3px;
+}

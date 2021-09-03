@@ -1,0 +1,4 @@
+.nav-link{text-decoration:none;color:white;margin:0 65px;font-family: roboto-slab;font-weight:900;}
+	.nav-link:hover{color:red}
+    .active{color:red!important}
+    .bg{background-color:black;}
